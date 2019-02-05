@@ -1,0 +1,25 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 offset-md-4">
+            <div class="card animated fadeInDown">
+                <img src="{{ this.photo.path }}" class="card-img-top" alt="{{ this.photo.filename }}">
+                <div class="card-body">
+                    <p>
+                        {{ timeago this.photo.created_at }}
+                    </p>
+                    <a href="/photo/{{ this.photo._id }}/delete" class="btn btn-danger btn-block">
+                        Delete Image
+                    </a>
+                    <form action="/photo/{{ this.photo._id }}" method="post" enctype="multipart/form-data">
+                        <div class="choise">
+                            <input type="file" name="photo" id="modiPht" class="modiPht"></input>
+                        </div>
+                        <button type="submit">midfi</button>
+                            Delete Image
+                        </a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

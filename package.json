@@ -1,0 +1,41 @@
+{
+  "name": "divlearn",
+  "version": "1.0.0",
+  "description": "reseau sociaux d'apprentissage collectif",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js"
+  },
+  "author": "2019 Created by MacComX",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "*",
+    "body-parser": "*",
+    "connect-flash": "*",
+    "cookie-parser": "^1.4.1",
+    "express": "*",
+    "express-handlebars": "*",
+    "express-messages": "*",
+    "express-session": "*",
+    "express-validator": "*",
+    "fs-extra": "^7.0.1",
+    "helper-timeago": "^0.1.0",
+    "method-override": "^3.0.0",
+    "mongodb": "^3.1.12",
+    "mongoose": "^5.4.5",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1",
+    "nodemailer": "^5.1.1",
+    "passport": "*",
+    "passport-http": "*",
+    "passport-local": "*",
+    "path": "^0.12.7",
+    "randomstring": "^1.1.5",
+    "timeago": "^1.6.3",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.9"
+  }
+}

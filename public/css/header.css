@@ -1,0 +1,175 @@
+.header {
+    background: #2b6cc0;
+    background: linear-gradient(to right, #0077d8, #17a5c9)        ;             
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 42px;
+    z-index: 7;
+}
+
+.contain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    width: 55%;
+    margin: auto;
+}
+
+.fas {
+    position: absolute;
+    top : 2px;
+    color: #52584f;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.logos {
+    margin: 8px;
+    float: left;
+}
+
+.logo:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.form {
+    margin-top: 8px;
+    float: left;
+}
+.decal{
+    position: relative;
+    left: 40px;
+}
+.search {
+    width: 200px;
+    height: 24px;
+    border: 1px solid transparent;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.search2 {
+    left: 20px;
+    height: 24px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border: transparent;
+}
+
+.menu {
+    border-left: .5px solid rgba(238, 238, 238, 0.24);
+}
+
+.acces {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    margin-top: 5px;
+}
+
+#myDropdown:hover {
+    color: #eee;
+}
+
+.placeholder {
+    font-size: 10px
+}
+
+
+
+
+
+.connect {
+    float: left;
+}
+.registe {
+    margin-left: 20px;
+}
+
+
+
+
+
+.x1{
+    display: flex;
+}
+.i1{
+    display: flex;
+}
+
+.ii2 a {
+    position: relative;
+    bottom: 1px;
+    color: #eee;
+    font-size: 13px;
+    font-weight: 700;
+    height: 24;
+    display: flex;
+    padding: 4px 10px;
+}
+
+.ii2 a:hover {
+    border-radius: 5px;
+    background: rgba(54, 45, 45, 0.158);
+    color: #eee;
+    transition: 1.1s;
+    text-decoration: none;
+}
+
+.user {
+    padding-left: 5px;
+    padding-right: 0px;
+    margin:0;
+}
+
+.profil {
+    border-left: 0.5px solid transparent;
+}
+
+.posit1 {
+    display: flex;
+    float: left;
+    margin-top: 7px;
+}
+
+.i1 a {
+    padding: 5px 15px 7px;
+    color: #eee;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.i1 a:hover {
+    border-radius: 5px;
+    background: rgba(54, 45, 45, 0.158);
+    color: #eee;
+    transition: 1s;
+    text-decoration: none;
+}
+
+#btn-inritze {
+    width: 50px;
+    height: 30px;
+}
+
+.icon i {
+    padding: 8px 5px;
+}
+
+.icon i a {
+    color: rgb(63, 60, 60);
+}
+.icon i a:hover {
+    color: rgba(0, 0, 0);
+    text-decoration: none;
+    transition: 1s;
+}
+
+.show {
+    background: rgb(226, 226, 226) !important;
+    display: block;
+}

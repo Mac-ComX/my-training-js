@@ -1,0 +1,55 @@
+.user-img {
+    float: left;
+    position: relative;
+    width: 46px;
+    height: 46px;
+}
+
+.user-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.user-img-h {
+    float: left;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    margin-top: 0px;
+}
+
+.user-img-h img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
+.img-prof {
+    float: left;
+    position: relative;
+    top: -140px;
+    left: 10px;
+    width: 168px;
+    height: 168px;
+    margin-top: 0px;
+}
+
+.img-prof img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    margin-top: 0px;
+}
+
+.Profpro {
+    display: flex;
+    justify-content: right;
+    width: 80%;
+    margin: auto;
+    border: 1px solid;
+    width: 853px;
+    height: 400px;
+    margin-bottom: 5px;
+}

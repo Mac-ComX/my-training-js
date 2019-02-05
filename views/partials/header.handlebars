@@ -1,0 +1,70 @@
+{{#if user}}
+<div class="margin">
+    <section class="img">
+      <header id="nav" class="header">
+        <div class="nav contain">
+          <div class="access">
+            <div class="logos">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            {{#if user}}
+            <form class="form">
+              <div class="input-group decal">
+                <input class="search" type="search" class="form-control" placeholder="Search" aria-label="Search">
+                <div class="input-group-prepend">
+                  <button class="search2" class="input-group-text"><i class="material-icons material">search</i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="btn-group">
+            <div class="posit1">
+              <div class="x1">
+                <div class="ii2">
+                  <a href="/profil" class="i2">
+                    <div class="user-img-h">
+                      <img class="img-ph" src="{{ this.photo.path }}" alt="">
+                    </div>
+                    <li>
+                      <p class="profil user">{{user/name}}</p>
+                    </li>
+                  </a>
+                </div>
+                <div class="i1">
+                  <li><a class="menu" href='/'>Home</a></li>
+                  <li><a class="menu" href="#">Message</a></li>
+                </div>
+
+              </div>
+            </div>
+            <div class="icon">
+              <list>
+                <i onclick="dropdown()" class="material-icons"><a href="#">group</i></a>
+              </list>
+              <i class="material-icons"><a href="#">email</i></a>
+              <i class="material-icons"><a href="#">view_compact</i></a>
+              <i class="material-icons"><a href="#">settings</i></a>
+            </div>
+
+            <list id="Dropdowns" class="btn-group">
+              <button id="btn" onclick="dropdown()" type="button" class="btn btn-inritze dropdown-toggle dropdown-toggle-split"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="sr-only"></span>
+              </button>
+              <div id="myDropdown" class="dropdown-menu">
+                <a class="dropdown-item" href="#">Action</a>
+                <a class="dropdown-item" href="#">Another action</a>
+                <a class="dropdown-item" href="#">Something else here</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/users/deconnect">Déconnexion</a>
+              </div>
+              {{else}}
+              {{/if}}
+            </list>
+          </div>
+        </div>
+      </header>
+    </section>
+  </div>
+  {{/if}}

@@ -1,0 +1,90 @@
+<section id="corp">
+  <div class="containe">
+    <div class="barLeft">
+      <div class="navbr">
+        <ul class="navi">
+          <a href='/profil'>
+            <li>{{user/name}}</li>
+          </a>
+          <br>
+          <a href="#">
+            <li class="active">Message</li>
+          </a>
+          <a href="#">
+            <li>Langage</li>
+          </a>
+          <a href="#">
+            <li>Exercés</li>
+          </a>
+          <a href="#">
+            <li>Groupe</li>
+          </a>
+        </ul>
+      </div>
+    </div>
+    <div class="middle">
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-header text-xl-left">
+              <div class="user-img">
+                <img src="{{ this.photo.path }}" alt="img">
+              </div>
+              <h5 class="Hi">Hi, {{user/name}}</h5>
+            </div>
+            <div class="card-body">
+              <form action="/upload" method="post" enctype="multipart/form-data">
+                <div class="input-group mb-3">
+                  <div class="custom-file">
+                    <input type="file" name="image" class="custom-file-input" id="inputGroupFile02">
+                    <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose
+                      file</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="title" placeholder="Title" class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea name="description" placeholder="Description" class="form-control textarea"></textarea>
+                </div>
+                <div class="form-group">
+                  <button class="btn btn-success btn-block">
+                    SHARE
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+          {{#each images}}
+          <div class="card animated fadeInDown">
+            <img src="{{ this.path }}" class="card-img-top" alt="{{ this.filename }}">
+            <div class="card-body">
+              <h5 class="card-title">{{ this.title }}</h5>
+              <p class="card-text">{{ this.description }}</p>
+              <p>{{timeago this.created_at }}</p>
+              <a href="/image/{{ this._id }}" class="btn btn-primary b-block">
+                View
+              </a>
+            </div>
+          </div>
+          {{/each}}
+
+
+        </div>
+      </div>
+    </div>
+    <div class="barRight">
+      <div class="card2">
+        <div>
+          <p class="entete">Mario et les Lapins le grand Ballle</p>
+        </div>
+        <img src="/img/mario.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <p class="card-text">Livestream pour les développeurs pour Mario + Rabbids se produisant demain sur Twitch</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

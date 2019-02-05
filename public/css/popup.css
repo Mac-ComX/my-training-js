@@ -1,0 +1,291 @@
+.bodylgn {
+    background-image: url("/img/antonio-rossi-1316744-unsplash.jpg");
+    background-size: cover;
+    height: 60rem !important;
+}
+button:focus { outline:0 !important; }
+
+.btnpopup {
+    cursor: pointer;
+}
+
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+
+.popup {
+    border: 1px solid;
+    margin: 5% auto;
+    height: 10em;
+    width: 50em;
+    background-color: rgb(228, 228, 228);
+    border-radius: 5px;
+    box-shadow: 15px 20px 0 rgba(0, 0, 0, 0.5);
+    padding: 1em;
+}
+
+.btnclose {
+    float: right;
+    top: 0;
+    cursor: pointer;
+}
+
+.modImg {
+    margin: auto;
+    height: 35rem;
+    width: 30em;
+}
+
+
+
+.over {
+    display: flex;
+    justify-content: center;
+    z-index: -2;
+}
+
+.fond {
+    position: fixed;
+    top: 8em;
+    background: #8feaff;
+    background: linear-gradient(to right bottom, #9eedffb6, #0099ffc4);
+    border-radius: 5px;
+    height: 38em;
+    width: 34em;
+    z-index: 0;
+}
+
+.btns {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    left: 33px;
+    bottom: 30px;
+    width: 30em;
+}
+
+.poplgn {
+    position: fixed;
+    background: #ffffff;
+    border-radius: 5px;
+    height: 27em;
+    width: 22em;
+    padding-bottom: 20px;
+    box-shadow: -15px 10px 50px 20px rgba(0, 0, 0, 0.267);
+    padding: 30px;
+    display: block;
+    z-index: 8;
+}
+
+#poplgn {
+    animation: flip 0.6s ease forwards;
+}
+
+@keyframes flip{
+    0% {transform: translatex(40px);opacity: 0}
+    40% {transform: translatex(30px)}
+    70%{ transform: perspective(500px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+        rotate3d(0, 1, 0, 20deg);opacity: 1}
+    100%{ }
+}
+
+.overl {
+    position: relative;
+    top: 12em;
+    right: 22em;
+    transition: 2s;
+}
+
+.popregi {
+    position: fixed;
+    background: #ffffff;
+    border: 0px;
+    border-radius: 5px;
+    height: 27em;
+    width: 22em;
+    box-shadow: 15px 10px 50px 20px rgba(0, 0, 0, 0.267);
+    padding: 10px 30px;
+    display: none;
+    z-index: 7;
+}
+#popregi {
+    animation: flip2 0.7s ease forwards;
+}
+
+@keyframes flip2{
+    
+    0% {transform: translatex(-50px); opacity: 0}
+    40% {transform: translatex(-20px)}
+    70%{ transform: perspective(500px) scale3d(1, 1, 1) translate3d(0, 0, 0)
+        rotate3d(0, 1, 0, -20deg); opacity: 1}
+    100%{ }
+}
+/* 
+#popregi {
+    animation: zoomOut 0.7s ease ;
+} */
+
+@keyframes zoomOut {
+    from {
+      opacity: 1;
+    }
+  
+    50% {
+      opacity: 0;
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    to {
+      opacity: 0;
+    }
+  }
+
+
+.overlregi {
+    position: relative;
+    top: 12em;
+}
+
+.souvenir {
+    position: relative;
+    top: 1px;
+    margin-bottom: 0px;
+}
+
+.souv {
+    margin-bottom: 0 ;
+}
+
+.so {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.btnlgn {
+    color: #eee;
+    box-shadow: 0.3em 1.5em 0.8em -1em #17a5c94b;
+    margin-top: 30px;
+    height: 40px;
+    width: 100%;
+    border: transparent;
+    background: linear-gradient(to right, #2bd0f5, #17a5c9);
+    cursor: pointer;
+}
+
+.pass {
+    color: black;
+    font-size: 13px;
+    position: relative;
+    top: 60px;
+}
+
+#btnlgn {
+    border: none;    
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.btnsty {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.btnmerde {
+    margin-top: 20px !important;
+}
+
+.btnlgn:hover {
+    color: #eee;
+    box-shadow: 0.3em 1.5em 0.8em -1em #17a5c962;
+    margin-top: 30px;
+    height: 40px;
+    width: 100%;
+    border: transparent;
+    background: linear-gradient(to right, #00d0ff, #009bc2);
+    cursor: pointer;
+}
+
+.btnreg {
+    outline:0;
+    color: #eee;
+    box-shadow: 0.3em 1.5em 0.8em -1em #03d31f41;
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    border: transparent;
+    background: #24FE41;
+    background: linear-gradient(to right, #24FE41, #03d31e);
+    cursor: pointer;
+
+}
+
+#btnreg { 
+    border:none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.btnreg:hover {
+    color: #eee;
+    box-shadow: 0.3em 1.5em 0.8em -1em #03d31f5b;
+    margin-top: 20px;
+    height: 40px;
+    width: 100%;
+    border: transparent;
+    background: #24FE41;  /* fallback for old browsers */
+    background: linear-gradient(to right, rgb(0, 255, 34), #03c71d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    cursor: pointer;
+}
+
+.colg {
+    padding-top: 5px;
+    font-family: 'Baloo Thambi', cursive;
+}
+.colg1 {
+    padding-top: 10px;
+    font-family: 'Baloo Thambi', cursive;
+}
+
+.txtlg {
+    margin: 0;
+    line-height: 25px;
+    font-size: 21px;
+    font-weight: 100;
+}
+
+.presentation {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 10em;
+}
+
+.tiNew {
+    color: #eee ;
+    font-size: 26px;
+    font-weight: bold ;
+}
+
+.present {
+    color: #eee;
+    width: 15em;
+}
+
+.titlpre {
+    color: #eee ;
+    font-size: 26px;
+    font-weight: bold ;
+}
+
+.input {
+    font-family: "FontAwesome" !important;
+    padding-left: 10px !important;
+}

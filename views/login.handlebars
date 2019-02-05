@@ -1,0 +1,84 @@
+<section class="bodylgn">
+    <div class="over">
+        <div class="fond">
+            <div class="presentation">
+                <div class="gauche">
+                    <h6 class="tiNew">
+                        Creates a new account
+                    </h6>
+                    <br><br>
+                    <p class="present">
+                        Create an account looking for people to practice group in your favorite language.
+                        No longer learned alone
+                    </p>
+                </div>
+                <div class="droite">
+                    <h6 class="titlpre">
+                        Let's learn together
+                    </h6>
+                    <br><br>
+                    <p class="present">
+                        Join the group of your choice to learn. It allows you to work on your group learning projects alone and asks for help. If you do not understand one thing
+                    </p>
+                </div>
+            </div>
+            <div id="btns" class="btns">
+                <button onclick="animation()" id="btnlgn" class="btnlgn btnmerde">SIGN IN</button>
+                <button id="btnreg" class="btnreg" type="submit">SIGN UP</button>
+            </div>
+        </div>
+        <div id="overl" class="overl">
+            <div id="poplgn" class="poplgn">
+                <h2 class="colg">
+                    Sign in
+                    {{!-- <span id="btncl" class="btncl">&times;</span> --}}
+                </h2>
+                <div>
+                    <p class="txtlg">Login to access your account</p>
+                    <form method="post" action="/users/login">
+                        <div class="form-group">
+                            <input type="text" class="form-control input" name="username" placeholder="&#xf007; Username">
+                        </div>
+                        <div class="form-groupe">
+                            <input type="password" class="form-control input souv" name="password" placeholder="&#xf13e; Password">
+                        </div>
+                        <div>
+                            <input class="souvenir" type="checkbox" id="subscribeNews" name="subscribe" value="newsletter">
+                            <label class="so" for="subscribeNews">this memory of me</label>
+                        </div>
+                        <button class="btnlgn btnsty" type="submit">CONTINUE</button>
+                        <a class="pass" href="#">Forgot your password ?</a>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <div class="overlregi">
+            <div id="popregi" class="popregi">
+                <div class="regist">
+                    <h3 class="colg1">Sign up</h3>
+                    <form method="post" action="/users/register">
+                        <div class="form-groupe inputG">
+                            <input type="text" class="form-control input" placeholder="&#xf007; Name" name="name">
+                        </div>
+                        <div class="form-groupe">
+                            <input type="text" class="form-control input" placeholder="&#xf007; Username" name="username">
+                        </div>
+                        <div class="form-groupe">
+                            <input type="email" class="form-control input" placeholder="&#xf1fa; Email" name="email">
+                        </div>
+                        <div class="form-groupe">
+                            <input type="password" class="form-control input" placeholder="&#xf13e; Password" name="password">
+                        </div>
+                        <div class="form-groupe">
+                            <input type="password" class="form-control input" placeholder="&#xf13e; Password" name="password2">
+                        </div>
+                        <button type="submit" class="btnreg btnsty">REGISTER</button>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>

@@ -1,0 +1,70 @@
+.navi {
+    position: fixed;
+    color: #000;
+    border: 1px solid transparent;
+    list-style-type: none;
+}
+
+.navi a{
+    margin: 0;
+    color: #000;
+}
+
+.navi a li{
+    font-size: 13px;
+    line-height: 28px;
+    padding: 3px 100px 3px 5px;
+    border: 1px solid transparent;
+}
+
+.navi a li:hover {
+    color: #000;
+    background-color: #f5f6f7;
+    border: 1px solid #dddfe2;
+    transition: 350ms;
+}
+
+.active {
+    background-color: #f5f6f7;
+    border: 1px solid #dddfe2;
+}
+
+
+.entete {
+    padding-left: 5px;
+}
+
+.card {
+    width: 550px !important;
+    margin: 0 auto 10px;
+    margin-left: 30px;
+}
+
+.card2 {
+    background: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    position: fixed;
+    border: 1px solid;
+    width: 280px !important;
+    margin: auto;
+    margin-left: 31px;
+}
+.useri {
+    padding-left: 50px;
+}
+
+.demande {
+    display: flex;
+    justify-content: space-around;
+}
+
+.d1 {
+    float: left;
+}
+.d2 {
+    float: left;
+}
+/* .d3 {
+    float: left;
+} */

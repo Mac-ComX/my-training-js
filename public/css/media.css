@@ -1,0 +1,116 @@
+@media screen and (max-width: 1650px) {
+    .search {
+        width: 400px;
+    }
+
+    .nav, .containe {
+        width: 60%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+
+    .search {
+        width: 400px;
+    }
+
+    .nav, .containe {
+        width: 65%;
+        margin: auto;
+    }
+
+}
+
+@media screen and (max-width: 1550px) {
+    .nav, .containe {
+        width: 70%;
+        margin: auto;
+    }
+
+    .search {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .nav, .containe {
+        width: 75%;
+        margin: auto;
+    }
+
+    .search {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1290px) {
+    .nav, .containe {
+        width: 85%;
+        margin: auto;
+    }
+
+    .search {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .nav, .containe {
+        width: 90%;
+        margin: auto;
+    }
+
+    .search {
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .nav, .containe {
+        width: 95%;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .nav, .containe {
+        width: 98%;
+        margin: auto;
+    }
+
+    .search {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 894px) {
+    .nav, .containe {
+        width: 95%;
+        margin: auto;
+    }
+
+    .search {
+        width: 250px;
+    }
+}
+@media screen and (max-width: 822px) {
+    .nav, .containe {
+        width: 98%;
+        margin: auto;
+    }
+    .search {
+        width: 250px;
+    }
+}
+@media screen and (max-width: 780px) {
+    .header {
+        width: 780px;
+    }
+    .nav, .containe {
+        width: 100%;
+        margin: auto;
+    }
+    .search {
+        width: 250px;
+    }
+}

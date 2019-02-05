@@ -1,0 +1,52 @@
+<section>
+    <div class="Profpro">
+        <div class="Profil-user">
+            <div class="imgProfil">
+                <img src="https://via.placeholder.com/851X315" alt="">
+            </div>
+            <div id="User">
+
+
+
+                <div class="img-prof">
+                    <img id="btnpopup" class="btnpopup" src="{{ this.photo.path }}" alt="img">
+                </div>
+                <div id="overlay" class="overlay">
+                    <div id="popup" class="popup">
+                        <h2>
+                            Modifie la photo de profil
+                            <span id="btnclose" class="btnclose">&times;</span>
+                        </h2>
+                        <hr>
+                        <form action="/profil" method="post" enctype="multipart/form-data">
+                            <div class="choise">
+                                <input type="file" name="photo" id="modiPht" class="modiPht"></input>
+                            </div>
+                            <button type="submit">Ajouter</button>
+                        </form>
+                        <a href="/photo/{{this.photo._id}}" type="submit">Modifier</a>
+                    </div>
+                </div>
+
+
+
+                <div class="logoProfil"></div>
+            </div>
+            <div class="navProfil"></div>
+            <div class="ajoutProfil"></div>
+        </div>
+    </div>
+    {{#each images}}
+    <div class="container">
+        <div class="card animated fadeInDown mx-auto">
+            <img src="{{ this.path }}" class="card-img-top" alt="{{ this.filename }}">
+            <div class="card-body">
+                <h5 class="card-title">{{ this.title }}</h5>
+                <p class="card-text">{{ this.description }}</p>
+                <p>{{timeago this.created_at }}</p>
+                <a href="/image/{{ this._id }}" class="btn btn-primary b-block">View</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</section>
